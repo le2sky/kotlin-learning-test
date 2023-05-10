@@ -3,6 +3,7 @@ package kotest.spec.annotation
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.AnnotationSpec
 import io.kotest.matchers.shouldBe
+import kotest.spec.Calculator
 
 internal class AnnotationSpecTest : AnnotationSpec() {
 
@@ -28,7 +29,3 @@ internal class AnnotationSpecTest : AnnotationSpec() {
     }
 }
 
-class Calculator {
-    fun plus(a: Int, b: Int) = a + b;
-    fun mult(a: Int, b: Int?) = a * (b ?: throw IllegalArgumentException());
-}
