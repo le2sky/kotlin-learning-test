@@ -27,11 +27,11 @@ internal class InfixFunctionTest : AnnotationSpec() {
         pair shouldBe Pair("Ferrari", "Katrina")
         times shouldBe "**"
     }
-}
 
-class Person(val name: String) {
-    val likedPeople = mutableListOf<Person>()
-    infix fun likes(other: Person) {
-        likedPeople.add(other)
+    class Person(val name: String) {
+        val likedPeople = mutableListOf<Person>()
+        infix fun likes(other: Person) {
+            likedPeople.add(other)
+        }
     }
 }
